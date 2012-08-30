@@ -28,7 +28,7 @@ Errors
     ``request_id``
         *string*. An ID that can be used to identify and debug the exception.
 
-.. _card-already-funding-src:
+.. _card-already-funding-src: card-already-funding-src
 
 card-already-funding-src
     :category code: card-already-funding-src
