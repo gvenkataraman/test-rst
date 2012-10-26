@@ -89,48 +89,48 @@ Body
     {
       "account": {
         "balance": 0,
-        "holds_uri": "/v1/marketplaces/TEST-MP4oHss7fjbvTfV42mnculmI/accounts/AC4oONnJLhu0bpKY7wEY93tW/holds",
+        "holds_uri": "/v1/marketplaces/TEST-MP1KKCKZU6hiEG06FbxgnC9m/accounts/AC1KRWLfTi1dqxOdEgjkJBly/holds",
         "name": null,
         "roles": [
           "merchant",
           "buyer"
         ],
-        "created_at": "2012-10-26T14:39:04.974033Z",
-        "updated_at": "2012-10-26T14:39:04.974036Z",
-        "uri": "/v1/marketplaces/TEST-MP4oHss7fjbvTfV42mnculmI/accounts/AC4oONnJLhu0bpKY7wEY93tW",
-        "refunds_uri": "/v1/marketplaces/TEST-MP4oHss7fjbvTfV42mnculmI/accounts/AC4oONnJLhu0bpKY7wEY93tW/refunds",
+        "created_at": "2012-10-26T14:43:48.702360Z",
+        "updated_at": "2012-10-26T14:43:48.702363Z",
+        "uri": "/v1/marketplaces/TEST-MP1KKCKZU6hiEG06FbxgnC9m/accounts/AC1KRWLfTi1dqxOdEgjkJBly",
+        "refunds_uri": "/v1/marketplaces/TEST-MP1KKCKZU6hiEG06FbxgnC9m/accounts/AC1KRWLfTi1dqxOdEgjkJBly/refunds",
         "meta": {},
-        "debits_uri": "/v1/marketplaces/TEST-MP4oHss7fjbvTfV42mnculmI/accounts/AC4oONnJLhu0bpKY7wEY93tW/debits",
-        "transactions_uri": "/v1/marketplaces/TEST-MP4oHss7fjbvTfV42mnculmI/accounts/AC4oONnJLhu0bpKY7wEY93tW/transactions",
-        "bank_accounts_uri": "/v1/marketplaces/TEST-MP4oHss7fjbvTfV42mnculmI/accounts/AC4oONnJLhu0bpKY7wEY93tW/bank_accounts",
+        "debits_uri": "/v1/marketplaces/TEST-MP1KKCKZU6hiEG06FbxgnC9m/accounts/AC1KRWLfTi1dqxOdEgjkJBly/debits",
+        "transactions_uri": "/v1/marketplaces/TEST-MP1KKCKZU6hiEG06FbxgnC9m/accounts/AC1KRWLfTi1dqxOdEgjkJBly/transactions",
+        "bank_accounts_uri": "/v1/marketplaces/TEST-MP1KKCKZU6hiEG06FbxgnC9m/accounts/AC1KRWLfTi1dqxOdEgjkJBly/bank_accounts",
         "email_address": "email.7@y.com",
-        "id": "AC4oONnJLhu0bpKY7wEY93tW",
-        "credits_uri": "/v1/marketplaces/TEST-MP4oHss7fjbvTfV42mnculmI/accounts/AC4oONnJLhu0bpKY7wEY93tW/credits",
-        "cards_uri": "/v1/marketplaces/TEST-MP4oHss7fjbvTfV42mnculmI/accounts/AC4oONnJLhu0bpKY7wEY93tW/cards"
+        "id": "AC1KRWLfTi1dqxOdEgjkJBly",
+        "credits_uri": "/v1/marketplaces/TEST-MP1KKCKZU6hiEG06FbxgnC9m/accounts/AC1KRWLfTi1dqxOdEgjkJBly/credits",
+        "cards_uri": "/v1/marketplaces/TEST-MP1KKCKZU6hiEG06FbxgnC9m/accounts/AC1KRWLfTi1dqxOdEgjkJBly/cards"
       },
       "fee": 25,
       "description": "hiya",
       "amount": 1254,
-      "created_at": "2012-10-26T14:39:05.050410Z",
+      "created_at": "2012-10-26T14:43:48.778518Z",
       "destination": {
         "bank_name": null,
         "name": "Fit Finlay",
         "bank_code": "325182797",
-        "created_at": "2012-10-26T14:39:04.969927Z",
-        "updated_at": "2012-10-26T14:39:04.969930Z",
-        "uri": "/v1/marketplaces/TEST-MP4oHss7fjbvTfV42mnculmI/accounts/AC4oONnJLhu0bpKY7wEY93tW/bank_accounts/BA4oOvbv9KkqqJtGHlBO6H2c",
+        "created_at": "2012-10-26T14:43:48.697965Z",
+        "updated_at": "2012-10-26T14:43:48.697968Z",
+        "uri": "/v1/marketplaces/TEST-MP1KKCKZU6hiEG06FbxgnC9m/accounts/AC1KRWLfTi1dqxOdEgjkJBly/bank_accounts/BA1KRDn2mpnxgrnFQ0tb3rEM",
         "is_valid": true,
         "meta": {},
         "last_four": "x234",
-        "id": "BA4oOvbv9KkqqJtGHlBO6H2c"
+        "id": "BA1KRDn2mpnxgrnFQ0tb3rEM"
       },
-      "uri": "/v1/marketplaces/TEST-MP4oHss7fjbvTfV42mnculmI/credits/CR4oTlbaG6iiLbEx5eEBl6Hq",
-      "updated_at": "2012-10-26T14:39:05.050412Z",
-      "transaction_number": "CR878-680-1944",
+      "uri": "/v1/marketplaces/TEST-MP1KKCKZU6hiEG06FbxgnC9m/credits/CR1KWte845jICrmF6BT2OZ5G",
+      "updated_at": "2012-10-26T14:43:48.778521Z",
+      "transaction_number": "CR156-795-4527",
       "state": "cleared",
       "meta": {},
-      "id": "CR4oTlbaG6iiLbEx5eEBl6Hq",
-      "available_at": "2012-10-26T21:39:05.030734Z"
+      "id": "CR1KWte845jICrmF6BT2OZ5G",
+      "available_at": "2012-10-26T21:43:48.758822Z"
     }
 
 
@@ -161,48 +161,48 @@ Body
     {
       "account": {
         "balance": 0,
-        "holds_uri": "/v1/marketplaces/TEST-MP4q7nXEwwKPx2eibZiiUw3G/accounts/AC4qeNfcFslJ0CXz0jRZrrnK/holds",
+        "holds_uri": "/v1/marketplaces/TEST-MP1Mbc4v0YDTlrYEHadSHQJC/accounts/AC1Miypvq6ASzuvQMUIANlA0/holds",
         "name": null,
         "roles": [
           "merchant",
           "buyer"
         ],
-        "created_at": "2012-10-26T14:39:06.235981Z",
-        "updated_at": "2012-10-26T14:39:06.235984Z",
-        "uri": "/v1/marketplaces/TEST-MP4q7nXEwwKPx2eibZiiUw3G/accounts/AC4qeNfcFslJ0CXz0jRZrrnK",
-        "refunds_uri": "/v1/marketplaces/TEST-MP4q7nXEwwKPx2eibZiiUw3G/accounts/AC4qeNfcFslJ0CXz0jRZrrnK/refunds",
+        "created_at": "2012-10-26T14:43:49.973037Z",
+        "updated_at": "2012-10-26T14:43:49.973040Z",
+        "uri": "/v1/marketplaces/TEST-MP1Mbc4v0YDTlrYEHadSHQJC/accounts/AC1Miypvq6ASzuvQMUIANlA0",
+        "refunds_uri": "/v1/marketplaces/TEST-MP1Mbc4v0YDTlrYEHadSHQJC/accounts/AC1Miypvq6ASzuvQMUIANlA0/refunds",
         "meta": {},
-        "debits_uri": "/v1/marketplaces/TEST-MP4q7nXEwwKPx2eibZiiUw3G/accounts/AC4qeNfcFslJ0CXz0jRZrrnK/debits",
-        "transactions_uri": "/v1/marketplaces/TEST-MP4q7nXEwwKPx2eibZiiUw3G/accounts/AC4qeNfcFslJ0CXz0jRZrrnK/transactions",
-        "bank_accounts_uri": "/v1/marketplaces/TEST-MP4q7nXEwwKPx2eibZiiUw3G/accounts/AC4qeNfcFslJ0CXz0jRZrrnK/bank_accounts",
+        "debits_uri": "/v1/marketplaces/TEST-MP1Mbc4v0YDTlrYEHadSHQJC/accounts/AC1Miypvq6ASzuvQMUIANlA0/debits",
+        "transactions_uri": "/v1/marketplaces/TEST-MP1Mbc4v0YDTlrYEHadSHQJC/accounts/AC1Miypvq6ASzuvQMUIANlA0/transactions",
+        "bank_accounts_uri": "/v1/marketplaces/TEST-MP1Mbc4v0YDTlrYEHadSHQJC/accounts/AC1Miypvq6ASzuvQMUIANlA0/bank_accounts",
         "email_address": "email.7@y.com",
-        "id": "AC4qeNfcFslJ0CXz0jRZrrnK",
-        "credits_uri": "/v1/marketplaces/TEST-MP4q7nXEwwKPx2eibZiiUw3G/accounts/AC4qeNfcFslJ0CXz0jRZrrnK/credits",
-        "cards_uri": "/v1/marketplaces/TEST-MP4q7nXEwwKPx2eibZiiUw3G/accounts/AC4qeNfcFslJ0CXz0jRZrrnK/cards"
+        "id": "AC1Miypvq6ASzuvQMUIANlA0",
+        "credits_uri": "/v1/marketplaces/TEST-MP1Mbc4v0YDTlrYEHadSHQJC/accounts/AC1Miypvq6ASzuvQMUIANlA0/credits",
+        "cards_uri": "/v1/marketplaces/TEST-MP1Mbc4v0YDTlrYEHadSHQJC/accounts/AC1Miypvq6ASzuvQMUIANlA0/cards"
       },
       "fee": 25,
       "description": "hiya",
       "amount": 1254,
-      "created_at": "2012-10-26T14:39:06.312358Z",
+      "created_at": "2012-10-26T14:43:50.049481Z",
       "destination": {
         "bank_name": null,
         "name": "Fit Finlay",
         "bank_code": "325182797",
-        "created_at": "2012-10-26T14:39:06.231837Z",
-        "updated_at": "2012-10-26T14:39:06.231840Z",
-        "uri": "/v1/marketplaces/TEST-MP4q7nXEwwKPx2eibZiiUw3G/accounts/AC4qeNfcFslJ0CXz0jRZrrnK/bank_accounts/BA4qeuXl3BmF7gVKF33YbWte",
+        "created_at": "2012-10-26T14:43:49.968661Z",
+        "updated_at": "2012-10-26T14:43:49.968664Z",
+        "uri": "/v1/marketplaces/TEST-MP1Mbc4v0YDTlrYEHadSHQJC/accounts/AC1Miypvq6ASzuvQMUIANlA0/bank_accounts/BA1MifaoWH6KrCxp2wtVaKgc",
         "is_valid": true,
         "meta": {},
         "last_four": "x234",
-        "id": "BA4qeuXl3BmF7gVKF33YbWte"
+        "id": "BA1MifaoWH6KrCxp2wtVaKgc"
       },
-      "uri": "/v1/marketplaces/TEST-MP4q7nXEwwKPx2eibZiiUw3G/credits/CR4qjky4Z6Wf71Vo6XbOUKEs",
-      "updated_at": "2012-10-26T14:39:06.312360Z",
-      "transaction_number": "CR352-861-7316",
+      "uri": "/v1/marketplaces/TEST-MP1Mbc4v0YDTlrYEHadSHQJC/credits/CR1Mn6osXXD4Xv2B46ddI0Nm",
+      "updated_at": "2012-10-26T14:43:50.049484Z",
+      "transaction_number": "CR490-355-9860",
       "state": "cleared",
       "meta": {},
-      "id": "CR4qjky4Z6Wf71Vo6XbOUKEs",
-      "available_at": "2012-10-26T21:39:06.292659Z"
+      "id": "CR1Mn6osXXD4Xv2B46ddI0Nm",
+      "available_at": "2012-10-26T21:43:50.029819Z"
     }
 
 
@@ -231,108 +231,108 @@ Body
 .. code:: javascript
 
     {
-      "first_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/credits?limit=10&offset=0",
+      "first_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/credits?limit=10&offset=0",
       "items": [
         {
           "account": {
             "balance": 0,
-            "holds_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/holds",
+            "holds_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/holds",
             "name": null,
             "roles": [
               "merchant",
               "buyer"
             ],
-            "created_at": "2012-10-26T14:39:07.503208Z",
-            "updated_at": "2012-10-26T14:39:07.503210Z",
-            "uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg",
-            "refunds_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/refunds",
+            "created_at": "2012-10-26T14:43:51.224078Z",
+            "updated_at": "2012-10-26T14:43:51.224080Z",
+            "uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII",
+            "refunds_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/refunds",
             "meta": {},
-            "debits_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/debits",
-            "transactions_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/transactions",
-            "bank_accounts_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/bank_accounts",
+            "debits_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/debits",
+            "transactions_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/transactions",
+            "bank_accounts_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/bank_accounts",
             "email_address": "email.7@y.com",
-            "id": "AC4rFa8jVHDv7KuOMwt2OFMg",
-            "credits_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/credits",
-            "cards_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/cards"
+            "id": "AC1NHO0gEks6iom4ebZE4YII",
+            "credits_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/credits",
+            "cards_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/cards"
           },
           "fee": 25,
           "description": "hiya",
           "amount": 1254,
-          "created_at": "2012-10-26T14:39:07.585211Z",
+          "created_at": "2012-10-26T14:43:51.282507Z",
           "destination": {
             "bank_name": null,
             "name": "Fit Finlay",
             "bank_code": "325182797",
-            "created_at": "2012-10-26T14:39:07.498848Z",
-            "updated_at": "2012-10-26T14:39:07.498852Z",
-            "uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/bank_accounts/BA4rEQJPMqqTqKW9uYDBQb1a",
+            "created_at": "2012-10-26T14:43:51.221083Z",
+            "updated_at": "2012-10-26T14:43:51.221086Z",
+            "uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/bank_accounts/BA1NHADbaW04y4fi1NXO9S4Y",
             "is_valid": true,
             "meta": {},
             "last_four": "x234",
-            "id": "BA4rEQJPMqqTqKW9uYDBQb1a"
+            "id": "BA1NHADbaW04y4fi1NXO9S4Y"
           },
-          "uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/credits/CR4rJG24YB8rP9TtlRzd9xo8",
-          "updated_at": "2012-10-26T14:39:07.585214Z",
-          "transaction_number": "CR470-362-8874",
+          "uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/credits/CR1NKUyhuJXxmdvFZE3BZPJa",
+          "updated_at": "2012-10-26T14:43:51.282509Z",
+          "transaction_number": "CR150-994-3893",
           "state": "cleared",
           "meta": {},
-          "id": "CR4rJG24YB8rP9TtlRzd9xo8",
-          "available_at": "2012-10-26T21:39:07.559529Z"
+          "id": "CR1NKUyhuJXxmdvFZE3BZPJa",
+          "available_at": "2012-10-26T21:43:51.262456Z"
         },
         {
           "account": {
             "balance": 0,
-            "holds_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/holds",
+            "holds_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/holds",
             "name": null,
             "roles": [
               "merchant",
               "buyer"
             ],
-            "created_at": "2012-10-26T14:39:07.503208Z",
-            "updated_at": "2012-10-26T14:39:07.503210Z",
-            "uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg",
-            "refunds_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/refunds",
+            "created_at": "2012-10-26T14:43:51.224078Z",
+            "updated_at": "2012-10-26T14:43:51.224080Z",
+            "uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII",
+            "refunds_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/refunds",
             "meta": {},
-            "debits_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/debits",
-            "transactions_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/transactions",
-            "bank_accounts_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/bank_accounts",
+            "debits_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/debits",
+            "transactions_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/transactions",
+            "bank_accounts_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/bank_accounts",
             "email_address": "email.7@y.com",
-            "id": "AC4rFa8jVHDv7KuOMwt2OFMg",
-            "credits_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/credits",
-            "cards_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/cards"
+            "id": "AC1NHO0gEks6iom4ebZE4YII",
+            "credits_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/credits",
+            "cards_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/cards"
           },
           "fee": 25,
           "description": "hiya",
           "amount": 431,
-          "created_at": "2012-10-26T14:39:07.585956Z",
+          "created_at": "2012-10-26T14:43:51.283146Z",
           "destination": {
             "bank_name": null,
             "name": "Fit Finlay",
             "bank_code": "325182797",
-            "created_at": "2012-10-26T14:39:07.498848Z",
-            "updated_at": "2012-10-26T14:39:07.498852Z",
-            "uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/accounts/AC4rFa8jVHDv7KuOMwt2OFMg/bank_accounts/BA4rEQJPMqqTqKW9uYDBQb1a",
+            "created_at": "2012-10-26T14:43:51.221083Z",
+            "updated_at": "2012-10-26T14:43:51.221086Z",
+            "uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/accounts/AC1NHO0gEks6iom4ebZE4YII/bank_accounts/BA1NHADbaW04y4fi1NXO9S4Y",
             "is_valid": true,
             "meta": {},
             "last_four": "x234",
-            "id": "BA4rEQJPMqqTqKW9uYDBQb1a"
+            "id": "BA1NHADbaW04y4fi1NXO9S4Y"
           },
-          "uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/credits/CR4rJNDQVSDzsapAOv6bLE5S",
-          "updated_at": "2012-10-26T14:39:07.585958Z",
-          "transaction_number": "CR740-886-0990",
+          "uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/credits/CR1NL0puDziR95YZ7MiBOjcg",
+          "updated_at": "2012-10-26T14:43:51.283148Z",
+          "transaction_number": "CR939-575-5989",
           "state": "cleared",
           "meta": {},
-          "id": "CR4rJNDQVSDzsapAOv6bLE5S",
-          "available_at": "2012-10-26T21:39:07.568808Z"
+          "id": "CR1NL0puDziR95YZ7MiBOjcg",
+          "available_at": "2012-10-26T21:43:51.269276Z"
         }
       ],
       "previous_uri": null,
-      "uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/credits?limit=10&offset=0",
+      "uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/credits?limit=10&offset=0",
       "limit": 10,
       "offset": 0,
       "total": 2,
       "next_uri": null,
-      "last_uri": "/v1/marketplaces/TEST-MP4rxPN9DBXcYwtiWOBdob8U/credits?limit=10&offset=0"
+      "last_uri": "/v1/marketplaces/TEST-MP1NAy4fpWPlHgNmN8h54M84/credits?limit=10&offset=0"
     }
 
 
@@ -369,6 +369,67 @@ Body
 
 Response
 ~~~~~~~~
+
+Headers
+^^^^^^^
+
+.. code:: 
+
+    Status: 200 OK
+
+Body
+^^^^
+
+.. code:: javascript
+
+    {
+      "account": {
+        "balance": 0,
+        "holds_uri": "/v1/marketplaces/TEST-MP1Qu2EbK3eWIDfYYULEf5gE/accounts/AC1QB9iqJqMxRJtNELsZRk6o/holds",
+        "name": null,
+        "roles": [
+          "merchant",
+          "buyer"
+        ],
+        "created_at": "2012-10-26T14:43:53.796100Z",
+        "updated_at": "2012-10-26T14:43:53.796102Z",
+        "uri": "/v1/marketplaces/TEST-MP1Qu2EbK3eWIDfYYULEf5gE/accounts/AC1QB9iqJqMxRJtNELsZRk6o",
+        "refunds_uri": "/v1/marketplaces/TEST-MP1Qu2EbK3eWIDfYYULEf5gE/accounts/AC1QB9iqJqMxRJtNELsZRk6o/refunds",
+        "meta": {},
+        "debits_uri": "/v1/marketplaces/TEST-MP1Qu2EbK3eWIDfYYULEf5gE/accounts/AC1QB9iqJqMxRJtNELsZRk6o/debits",
+        "transactions_uri": "/v1/marketplaces/TEST-MP1Qu2EbK3eWIDfYYULEf5gE/accounts/AC1QB9iqJqMxRJtNELsZRk6o/transactions",
+        "bank_accounts_uri": "/v1/marketplaces/TEST-MP1Qu2EbK3eWIDfYYULEf5gE/accounts/AC1QB9iqJqMxRJtNELsZRk6o/bank_accounts",
+        "email_address": "email.7@y.com",
+        "id": "AC1QB9iqJqMxRJtNELsZRk6o",
+        "credits_uri": "/v1/marketplaces/TEST-MP1Qu2EbK3eWIDfYYULEf5gE/accounts/AC1QB9iqJqMxRJtNELsZRk6o/credits",
+        "cards_uri": "/v1/marketplaces/TEST-MP1Qu2EbK3eWIDfYYULEf5gE/accounts/AC1QB9iqJqMxRJtNELsZRk6o/cards"
+      },
+      "fee": 25,
+      "description": "hiya",
+      "amount": 1254,
+      "created_at": "2012-10-26T14:43:53.859457Z",
+      "destination": {
+        "bank_name": null,
+        "name": "Fit Finlay",
+        "bank_code": "325182797",
+        "created_at": "2012-10-26T14:43:53.791670Z",
+        "updated_at": "2012-10-26T14:43:53.791673Z",
+        "uri": "/v1/marketplaces/TEST-MP1Qu2EbK3eWIDfYYULEf5gE/accounts/AC1QB9iqJqMxRJtNELsZRk6o/bank_accounts/BA1QAPGOeJYtbavee0cToaVu",
+        "is_valid": true,
+        "meta": {},
+        "last_four": "x234",
+        "id": "BA1QAPGOeJYtbavee0cToaVu"
+      },
+      "uri": "/v1/marketplaces/TEST-MP1Qu2EbK3eWIDfYYULEf5gE/credits/CR1QEwQHg1XsgOLqsjN8aKjy",
+      "updated_at": "2012-10-26T14:43:53.902965Z",
+      "transaction_number": "CR296-933-5442",
+      "state": "cleared",
+      "meta": {
+        "my-id": "0987654321"
+      },
+      "id": "CR1QEwQHg1XsgOLqsjN8aKjy",
+      "available_at": "2012-10-26T21:43:53.838325Z"
+    }
 
 
 
