@@ -60,12 +60,12 @@ Credit an Account
 Request
 ~~~~~~~
 
-``amount``: *required* **integer**.  
+``amount`` *required* **integer**
     USD cents. Must be **>=** your minimum credit amount but **<=** your maximum credit amount. 
  
-``description``: *optional* **string**.  
+``description`` *optional* **string**
  
-``meta``: *optional* **object**.  
+``meta`` *optional* **object**
     Single level mapping from string keys to string values. 
  
 ``appears_on_statement_as``: *optional* **string**.  
