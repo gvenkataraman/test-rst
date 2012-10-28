@@ -10,20 +10,20 @@ Fields
 ------
 
 ``id`` 
-    **string**. The resource identifier. 
+  **string**. The resource identifier. 
  
 ``uri`` 
-    **string**. A URI for a Balanced entity 
+  **string**. A URI for a Balanced entity 
  
 ``amount`` 
-    **integer**. Amount of the credit. 
+  **integer**. Amount of the credit. 
  
 ``created_at`` 
-    **string**. `ISO 8601 <http://www.w3.org/QA/Tips/iso-date>`_ date of when this 
-    credit was created. 
+  **string**. `ISO 8601 <http://www.w3.org/QA/Tips/iso-date>`_ date of when this 
+  credit was created. 
  
 ``description`` 
-    **string**. A description of the credit, used for display purposes. 
+  **string**. A description of the credit, used for display purposes. 
  
 ``account`` 
     **object**. The account to which the credit is associated. 
@@ -80,7 +80,7 @@ Request
     Any other characters will be rejected. Length must be **<=** ``22``. 
  
 ``account_uri`` 
-    *optional* **string**.  
+  *optional* **string**.  
  
 One of:  
     ``destination_uri`` 
