@@ -60,16 +60,17 @@ Credit an Account
 Request
 ~~~~~~~
 
-``amount`` *required* **integer**
-    USD cents. Must be **>=** your minimum credit amount but **<=** your maximum credit amount. 
+``amount``
+    *required* **integer**. USD cents. Must be **>=** your minimum credit amount but **<=** your maximum credit amount. 
  
-``description`` *optional* **string**
+``description``
+    *optional* **string**
  
-``meta`` *optional* **object**
-    Single level mapping from string keys to string values. 
+``meta``
+    *optional* **object**. Single level mapping from string keys to string values. 
  
-``appears_on_statement_as``: *optional* **string**.  
-    Text that will appear on the buyer's statement. Characters that can be 
+``appears_on_statement_as``
+    *optional* **string**. Text that will appear on the buyer's statement. Characters that can be 
     used are limited to: 
  
     - ASCII letters (``a-z`` and ``A-Z``) 
