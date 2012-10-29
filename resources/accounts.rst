@@ -114,7 +114,8 @@ Request
     information. 
  
 ``merchant`` 
-    *optional* **object** or **null**. ``type`` 
+    *optional* **object** or **null**.  
+    ``type`` 
         *required* **string** or **null**. Merchant type. It should be one of: ``person`` or ``business``. 
  
     ``phone_number`` 
@@ -133,7 +134,8 @@ Request
         *optional* **string** or **null**. Date-of-birth formatted as YYYY-MM-DD. 
  
     ``person`` 
-        *optional* **object** or **null**. ``name`` 
+        *optional* **object** or **null**.  
+        ``name`` 
             *required* **string** or **null**.  
  
         ``dob`` 
@@ -141,13 +143,6 @@ Request
  
         ``city`` 
             *optional* **string** or **null**. City. 
- 
-        ``region`` 
-            *optional* **string** or **null**. Region (e.g. state, province, etc). This field has been 
-            **deprecated**. 
- 
-        ``state`` 
-            *optional* **string** or **null**. US state. This field has been **deprecated**. 
  
         ``postal_code`` 
             *required* **string** or **null**. Postal code. This is known as a zip code in the USA. 
@@ -174,13 +169,6 @@ Request
  
     ``city`` 
         *optional* **string** or **null**. City. 
- 
-    ``region`` 
-        *optional* **string** or **null**. Region (e.g. state, province, etc). This field has been 
-        **deprecated**. 
- 
-    ``state`` 
-        *optional* **string** or **null**. US state. This field has been **deprecated**. 
  
     ``postal_code`` 
         *required* **string** or **null**. Postal code. This is known as a zip code in the USA. 
@@ -230,7 +218,8 @@ Request
     information. 
  
 ``merchant`` 
-    *optional* **object** or **null**. ``type`` 
+    *optional* **object** or **null**.  
+    ``type`` 
         *required* **string** or **null**. Merchant type. It should be one of: ``person`` or ``business``. 
  
     ``phone_number`` 
@@ -256,13 +245,6 @@ Request
  
     ``city`` 
         *optional* **string** or **null**. City. 
- 
-    ``region`` 
-        *optional* **string** or **null**. Region (e.g. state, province, etc). This field has been 
-        **deprecated**. 
- 
-    ``state`` 
-        *optional* **string** or **null**. US state. This field has been **deprecated**. 
  
     ``postal_code`` 
         *required* **string** or **null**. Postal code. This is known as a zip code in the USA. 
@@ -346,15 +328,11 @@ Promote a Buyer Account to a Merchant
 Request
 ~~~~~~~
 
-    #. If `account` is a merchant then: 
+``merchant_uri`` 
+    *optional* **string** or **null**.  
  
-    #. If `account` is not a merchant then: 
- 
-       ``merchant_uri`` 
-           *optional* **string** or **null**.  
- 
-       ``merchant`` 
-           *optional* **object** or **null**. See `Create a Business Merchant <./bank_accounts.rst#create-a-business-merchant>`_ or `Create a Person Merchant <./bank_accounts.rst#create-a-person-merchant>`_. 
+``merchant`` 
+    *optional* **object** or **null**. See `Create a Business Merchant <./bank_accounts.rst#create-a-business-merchant>`_ or `Create a Person Merchant <./bank_accounts.rst#create-a-person-merchant>`_. 
  
  
 
