@@ -115,31 +115,57 @@ Request
  
 ``merchant`` 
     *optional* **object** or **null**.  
-    ``type`` 
-        *required* **string** or **null**. Merchant type. It should be one of: ``person`` or ``business``. 
+        ``type`` 
+            *required* **string** or **null**. Merchant type. It should be one of: ``person`` or ``business``. 
  
-    ``phone_number`` 
-        *required* **string** or **null**. E.164 formatted phone number. Length must be **<=** ``15``. 
+        ``phone_number`` 
+            *required* **string** or **null**. E.164 formatted phone number. Length must be **<=** ``15``. 
  
-    ``email_address`` 
-        *optional* **string**. RFC-2822 formatted email address. 
+        ``email_address`` 
+            *optional* **string**. RFC-2822 formatted email address. 
  
-    ``meta`` 
-        *optional* **object** or **null**. Single level mapping from string keys to string values. 
+        ``meta`` 
+            *optional* **object** or **null**. Single level mapping from string keys to string values. 
  
-    ``tax_id`` 
-        *optional* **string** or **null**. Length must be **=** ``9``. 
- 
-    ``dob`` 
-        *optional* **string** or **null**. Date-of-birth formatted as YYYY-MM-DD. 
- 
-    ``person`` 
-        *optional* **object** or **null**.  
-        ``name`` 
-            *required* **string** or **null**.  
+        ``tax_id`` 
+            *optional* **string** or **null**. Length must be **=** ``9``. 
  
         ``dob`` 
-            *required* **string** or **null**. Date-of-birth formatted as YYYY-MM-DD. 
+            *optional* **string** or **null**. Date-of-birth formatted as YYYY-MM-DD. 
+ 
+        ``person`` 
+            *optional* **object** or **null**.  
+                ``name`` 
+                    *required* **string** or **null**.  
+ 
+                ``dob`` 
+                    *required* **string** or **null**. Date-of-birth formatted as YYYY-MM-DD. 
+ 
+                ``city`` 
+                    *optional* **string** or **null**. City. 
+ 
+                ``postal_code`` 
+                    *required* **string** or **null**. Postal code. This is known as a zip code in the USA. 
+                    *requires* country_code 
+ 
+                ``street_address`` 
+                    *required* **string** or **null**. Street address. 
+                    *requires* postal_code 
+ 
+                ``country_code`` 
+                    *optional* **string** or **null**. `ISO-3166-3 
+                    <http://www.iso.org/iso/home/standards/country_codes.htm#2012_iso3166-3>`_ 
+                    three character country code. 
+ 
+                ``tax_id`` 
+                    *optional* **string** or **null**. Length must be **=** ``9``. 
+ 
+ 
+        ``name`` 
+            *optional* **string** or **null**. Length must be **<=** ``128``. 
+ 
+        ``production`` 
+            *optional* **boolean** or **null**. Flag value, should be ``true`` or ``false``. 
  
         ``city`` 
             *optional* **string** or **null**. City. 
@@ -156,32 +182,6 @@ Request
             *optional* **string** or **null**. `ISO-3166-3 
             <http://www.iso.org/iso/home/standards/country_codes.htm#2012_iso3166-3>`_ 
             three character country code. 
- 
-        ``tax_id`` 
-            *optional* **string** or **null**. Length must be **=** ``9``. 
- 
- 
-    ``name`` 
-        *optional* **string** or **null**. Length must be **<=** ``128``. 
- 
-    ``production`` 
-        *optional* **boolean** or **null**. Flag value, should be ``true`` or ``false``. 
- 
-    ``city`` 
-        *optional* **string** or **null**. City. 
- 
-    ``postal_code`` 
-        *required* **string** or **null**. Postal code. This is known as a zip code in the USA. 
-        *requires* country_code 
- 
-    ``street_address`` 
-        *required* **string** or **null**. Street address. 
-        *requires* postal_code 
- 
-    ``country_code`` 
-        *optional* **string** or **null**. `ISO-3166-3 
-        <http://www.iso.org/iso/home/standards/country_codes.htm#2012_iso3166-3>`_ 
-        three character country code. 
  
  
 
@@ -219,45 +219,45 @@ Request
  
 ``merchant`` 
     *optional* **object** or **null**.  
-    ``type`` 
-        *required* **string** or **null**. Merchant type. It should be one of: ``person`` or ``business``. 
+        ``type`` 
+            *required* **string** or **null**. Merchant type. It should be one of: ``person`` or ``business``. 
  
-    ``phone_number`` 
-        *required* **string** or **null**. E.164 formatted phone number. Length must be **<=** ``15``. 
+        ``phone_number`` 
+            *required* **string** or **null**. E.164 formatted phone number. Length must be **<=** ``15``. 
  
-    ``email_address`` 
-        *optional* **string**. RFC-2822 formatted email address. 
+        ``email_address`` 
+            *optional* **string**. RFC-2822 formatted email address. 
  
-    ``meta`` 
-        *optional* **object** or **null**. Single level mapping from string keys to string values. 
+        ``meta`` 
+            *optional* **object** or **null**. Single level mapping from string keys to string values. 
  
-    ``tax_id`` 
-        *optional* **string** or **null**. Length must be **=** ``9``. 
+        ``tax_id`` 
+            *optional* **string** or **null**. Length must be **=** ``9``. 
  
-    ``dob`` 
-        *optional* **string** or **null**. Date-of-birth formatted as YYYY-MM-DD. 
+        ``dob`` 
+            *optional* **string** or **null**. Date-of-birth formatted as YYYY-MM-DD. 
  
-    ``name`` 
-        *optional* **string** or **null**. Length must be **<=** ``128``. 
+        ``name`` 
+            *optional* **string** or **null**. Length must be **<=** ``128``. 
  
-    ``production`` 
-        *optional* **boolean** or **null**. Flag value, should be ``true`` or ``false``. 
+        ``production`` 
+            *optional* **boolean** or **null**. Flag value, should be ``true`` or ``false``. 
  
-    ``city`` 
-        *optional* **string** or **null**. City. 
+        ``city`` 
+            *optional* **string** or **null**. City. 
  
-    ``postal_code`` 
-        *required* **string** or **null**. Postal code. This is known as a zip code in the USA. 
-        *requires* country_code 
+        ``postal_code`` 
+            *required* **string** or **null**. Postal code. This is known as a zip code in the USA. 
+            *requires* country_code 
  
-    ``street_address`` 
-        *required* **string** or **null**. Street address. 
-        *requires* postal_code 
+        ``street_address`` 
+            *required* **string** or **null**. Street address. 
+            *requires* postal_code 
  
-    ``country_code`` 
-        *optional* **string** or **null**. `ISO-3166-3 
-        <http://www.iso.org/iso/home/standards/country_codes.htm#2012_iso3166-3>`_ 
-        three character country code. 
+        ``country_code`` 
+            *optional* **string** or **null**. `ISO-3166-3 
+            <http://www.iso.org/iso/home/standards/country_codes.htm#2012_iso3166-3>`_ 
+            three character country code. 
  
  
 
