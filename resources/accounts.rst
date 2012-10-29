@@ -69,18 +69,17 @@ Request
 ~~~~~~~
 
 ``name`` 
-    *optional* **string**. The display ``name`` of the account. Length must be **<=** ``128``. 
+    *optional* **string** or **null**. The display ``name`` of the account. Length must be **<=** ``128``. 
  
 ``email_address`` 
     *optional* **string**. Email address of the account. It must be **unique** among all accounts 
     on your marketplace. 
  
-One of:  
-    ``card_uri`` 
-        *required* **string**. The URI of the tokenized card. 
+``card_uri`` 
+    *optional* **string** or **null**. The URI of the tokenized card. 
  
-    ``card`` 
-        *required* **object**. See `Create a Card <./cards.rst#create-a-card>`_. 
+``card`` 
+    *optional* **object** or **null**. See `Create a Card <./cards.rst#create-a-card>`_. 
  
 
 Response
@@ -98,107 +97,103 @@ Request
 ~~~~~~~
 
 ``name`` 
-    *optional* **string**. The display ``name`` of the account. Length must be **<=** ``128``. 
+    *optional* **string** or **null**. The display ``name`` of the account. Length must be **<=** ``128``. 
  
 ``email_address`` 
     *optional* **string**. Email address of the account. It must be **unique** among all accounts 
     on your marketplace. 
  
-One of:  
-    ``bank_account_uri`` 
-        *required* **string**. The URI of the bank account created via *balanced.js*. 
+``bank_account_uri`` 
+    *optional* **string** or **null**. The URI of the bank account created via *balanced.js*. 
  
-    ``bank_account`` 
-        *required* **object**. See `Create a BankAccount <./bank_accounts.rst#create-a-bankaccount>`_. 
+``bank_account`` 
+    *optional* **object** or **null**. See `Create a BankAccount <./bank_accounts.rst#create-a-bankaccount>`_. 
  
-One of:  
-    ``merchant_uri`` 
-        *required* **string**. The URI of the merchant account created during a request for more 
-        information. 
+``merchant_uri`` 
+    *optional* **string** or **null**. The URI of the merchant account created during a request for more 
+    information. 
  
-    ``merchant`` 
-        *required* **object**. ``type`` 
-            *required* **string**. Merchant type. It should be one of: ``person`` or ``business``. 
+``merchant`` 
+    *optional* **object** or **null**. ``type`` 
+        *required* **string** or **null**. Merchant type. It should be one of: ``person`` or ``business``. 
  
-        ``phone_number`` 
-            *required* **string**. E.164 formatted phone number. Length must be **<=** ``15``. 
+    ``phone_number`` 
+        *required* **string** or **null**. E.164 formatted phone number. Length must be **<=** ``15``. 
  
-        ``email_address`` 
-            *optional* **string**. RFC-2822 formatted email address. 
+    ``email_address`` 
+        *optional* **string**. RFC-2822 formatted email address. 
  
-        ``meta`` 
-            *optional* **object**. Single level mapping from string keys to string values. 
+    ``meta`` 
+        *optional* **object** or **null**. Single level mapping from string keys to string values. 
  
-        ``tax_id`` 
-            *optional* **string**. Length must be **=** ``9``. 
+    ``tax_id`` 
+        *optional* **string** or **null**. Length must be **=** ``9``. 
+ 
+    ``dob`` 
+        *optional* **string** or **null**. Date-of-birth formatted as YYYY-MM-DD. 
+ 
+    ``person`` 
+        *optional* **object** or **null**. ``name`` 
+            *required* **string** or **null**.  
  
         ``dob`` 
-            *optional* **string**. Date-of-birth formatted as YYYY-MM-DD. 
- 
-        ``person`` 
-            *optional* **object**. ``name`` 
-                *required* **string**.  
- 
-            ``dob`` 
-                *required* **string**. Date-of-birth formatted as YYYY-MM-DD. 
- 
-            ``city`` 
-                *optional* **string**. City. 
- 
-            One of:  
-                ``region`` 
-                    *required* **string**. Region (e.g. state, province, etc). This field has been 
-                    **deprecated**. 
- 
-                ``state`` 
-                    *required* **string**. US state. This field has been **deprecated**. 
- 
-            ``postal_code`` 
-                *required* **string**. Postal code. This is known as a zip code in the USA. 
-                *requires* country_code 
- 
-            ``street_address`` 
-                *required* **string**. Street address. 
-                *requires* postal_code 
- 
-            ``country_code`` 
-                *optional* **string**. `ISO-3166-3 
-                <http://www.iso.org/iso/home/standards/country_codes.htm#2012_iso3166-3>`_ 
-                three character country code. 
- 
-            ``tax_id`` 
-                *optional* **string**. Length must be **=** ``9``. 
- 
- 
-        ``name`` 
-            *optional* **string**. Length must be **<=** ``128``. 
- 
-        ``production`` 
-            *optional* **boolean**. Flag value, should be ``true`` or ``false``. 
+            *required* **string** or **null**. Date-of-birth formatted as YYYY-MM-DD. 
  
         ``city`` 
-            *optional* **string**. City. 
+            *optional* **string** or **null**. City. 
  
-        One of:  
-            ``region`` 
-                *required* **string**. Region (e.g. state, province, etc). This field has been 
-                **deprecated**. 
+        ``region`` 
+            *optional* **string** or **null**. Region (e.g. state, province, etc). This field has been 
+            **deprecated**. 
  
-            ``state`` 
-                *required* **string**. US state. This field has been **deprecated**. 
+        ``state`` 
+            *optional* **string** or **null**. US state. This field has been **deprecated**. 
  
         ``postal_code`` 
-            *required* **string**. Postal code. This is known as a zip code in the USA. 
+            *required* **string** or **null**. Postal code. This is known as a zip code in the USA. 
             *requires* country_code 
  
         ``street_address`` 
-            *required* **string**. Street address. 
+            *required* **string** or **null**. Street address. 
             *requires* postal_code 
  
         ``country_code`` 
-            *optional* **string**. `ISO-3166-3 
+            *optional* **string** or **null**. `ISO-3166-3 
             <http://www.iso.org/iso/home/standards/country_codes.htm#2012_iso3166-3>`_ 
             three character country code. 
+ 
+        ``tax_id`` 
+            *optional* **string** or **null**. Length must be **=** ``9``. 
+ 
+ 
+    ``name`` 
+        *optional* **string** or **null**. Length must be **<=** ``128``. 
+ 
+    ``production`` 
+        *optional* **boolean** or **null**. Flag value, should be ``true`` or ``false``. 
+ 
+    ``city`` 
+        *optional* **string** or **null**. City. 
+ 
+    ``region`` 
+        *optional* **string** or **null**. Region (e.g. state, province, etc). This field has been 
+        **deprecated**. 
+ 
+    ``state`` 
+        *optional* **string** or **null**. US state. This field has been **deprecated**. 
+ 
+    ``postal_code`` 
+        *required* **string** or **null**. Postal code. This is known as a zip code in the USA. 
+        *requires* country_code 
+ 
+    ``street_address`` 
+        *required* **string** or **null**. Street address. 
+        *requires* postal_code 
+ 
+    ``country_code`` 
+        *optional* **string** or **null**. `ISO-3166-3 
+        <http://www.iso.org/iso/home/standards/country_codes.htm#2012_iso3166-3>`_ 
+        three character country code. 
  
  
 
@@ -218,72 +213,69 @@ Request
 ~~~~~~~
 
 ``name`` 
-    *optional* **string**. The display ``name`` of the account. Length must be **<=** ``128``. 
+    *optional* **string** or **null**. The display ``name`` of the account. Length must be **<=** ``128``. 
  
 ``email_address`` 
     *optional* **string**. Email address of the account. It must be **unique** among all accounts 
     on your marketplace. 
  
-One of:  
-    ``bank_account_uri`` 
-        *required* **string**. The URI of the bank account created via *balanced.js*. 
+``bank_account_uri`` 
+    *optional* **string** or **null**. The URI of the bank account created via *balanced.js*. 
  
-    ``bank_account`` 
-        *required* **object**. See `Create a BankAccount <./bank_accounts.rst#create-a-bankaccount>`_. 
+``bank_account`` 
+    *optional* **object** or **null**. See `Create a BankAccount <./bank_accounts.rst#create-a-bankaccount>`_. 
  
-One of:  
-    ``merchant_uri`` 
-        *required* **string**. The URI of the merchant account created during a request for more 
-        information. 
+``merchant_uri`` 
+    *optional* **string** or **null**. The URI of the merchant account created during a request for more 
+    information. 
  
-    ``merchant`` 
-        *required* **object**. ``type`` 
-            *required* **string**. Merchant type. It should be one of: ``person`` or ``business``. 
+``merchant`` 
+    *optional* **object** or **null**. ``type`` 
+        *required* **string** or **null**. Merchant type. It should be one of: ``person`` or ``business``. 
  
-        ``phone_number`` 
-            *required* **string**. E.164 formatted phone number. Length must be **<=** ``15``. 
+    ``phone_number`` 
+        *required* **string** or **null**. E.164 formatted phone number. Length must be **<=** ``15``. 
  
-        ``email_address`` 
-            *optional* **string**. RFC-2822 formatted email address. 
+    ``email_address`` 
+        *optional* **string**. RFC-2822 formatted email address. 
  
-        ``meta`` 
-            *optional* **object**. Single level mapping from string keys to string values. 
+    ``meta`` 
+        *optional* **object** or **null**. Single level mapping from string keys to string values. 
  
-        ``tax_id`` 
-            *optional* **string**. Length must be **=** ``9``. 
+    ``tax_id`` 
+        *optional* **string** or **null**. Length must be **=** ``9``. 
  
-        ``dob`` 
-            *optional* **string**. Date-of-birth formatted as YYYY-MM-DD. 
+    ``dob`` 
+        *optional* **string** or **null**. Date-of-birth formatted as YYYY-MM-DD. 
  
-        ``name`` 
-            *optional* **string**. Length must be **<=** ``128``. 
+    ``name`` 
+        *optional* **string** or **null**. Length must be **<=** ``128``. 
  
-        ``production`` 
-            *optional* **boolean**. Flag value, should be ``true`` or ``false``. 
+    ``production`` 
+        *optional* **boolean** or **null**. Flag value, should be ``true`` or ``false``. 
  
-        ``city`` 
-            *optional* **string**. City. 
+    ``city`` 
+        *optional* **string** or **null**. City. 
  
-        One of:  
-            ``region`` 
-                *required* **string**. Region (e.g. state, province, etc). This field has been 
-                **deprecated**. 
+    ``region`` 
+        *optional* **string** or **null**. Region (e.g. state, province, etc). This field has been 
+        **deprecated**. 
  
-            ``state`` 
-                *required* **string**. US state. This field has been **deprecated**. 
+    ``state`` 
+        *optional* **string** or **null**. US state. This field has been **deprecated**. 
  
-        ``postal_code`` 
-            *required* **string**. Postal code. This is known as a zip code in the USA. 
-            *requires* country_code 
+    ``postal_code`` 
+        *required* **string** or **null**. Postal code. This is known as a zip code in the USA. 
+        *requires* country_code 
  
-        ``street_address`` 
-            *required* **string**. Street address. 
-            *requires* postal_code 
+    ``street_address`` 
+        *required* **string** or **null**. Street address. 
+        *requires* postal_code 
  
-        ``country_code`` 
-            *optional* **string**. `ISO-3166-3 
-            <http://www.iso.org/iso/home/standards/country_codes.htm#2012_iso3166-3>`_ 
-            three character country code. 
+    ``country_code`` 
+        *optional* **string** or **null**. `ISO-3166-3 
+        <http://www.iso.org/iso/home/standards/country_codes.htm#2012_iso3166-3>`_ 
+        three character country code. 
  
  
 
@@ -319,27 +311,25 @@ Request
 ~~~~~~~   
  
 ``name`` 
-    *optional* **string**. The display ``name`` of the account. Length must be **<=** ``128``. 
+    *optional* **string** or **null**. The display ``name`` of the account. Length must be **<=** ``128``. 
  
 ``email_address`` 
     *optional* **string**. RFC-2822 formatted email address. 
  
 ``meta`` 
-    *optional* **object**. Single level mapping from string keys to string values. 
+    *optional* **object** or **null**. Single level mapping from string keys to string values. 
  
-One of:  
-    ``card_uri`` 
-        *required* **string**. Tokenized card URI. 
+``card_uri`` 
+    *optional* **string** or **null**. Tokenized card URI. 
  
-    ``card`` 
-        *required* **object**. See `Create a Card <./bank_accounts.rst#create-a-card>`_. 
+``card`` 
+    *optional* **object** or **null**. See `Create a Card <./bank_accounts.rst#create-a-card>`_. 
  
-One of:  
-    ``bank_account_uri`` 
-        *required* **string**. Tokenized bank account URI. 
+``bank_account_uri`` 
+    *optional* **string** or **null**. Tokenized bank account URI. 
  
-    ``bank_account`` 
-        *required* **object**. See `Create a BankAccount <./bank_accounts.rst#create-a-bankaccount>`_. 
+``bank_account`` 
+    *optional* **object** or **null**. See `Create a BankAccount <./bank_accounts.rst#create-a-bankaccount>`_. 
  
 
 Response
@@ -360,12 +350,11 @@ Request
  
     #. If `account` is not a merchant then: 
  
-       One of:  
-           ``merchant_uri`` 
-               *required* **string**.  
+       ``merchant_uri`` 
+           *optional* **string** or **null**.  
  
-           ``merchant`` 
-               *required* **object**. See `Create a Business Merchant <./bank_accounts.rst#create-a-business-merchant>`_ or `Create a Person Merchant <./bank_accounts.rst#create-a-person-merchant>`_. 
+       ``merchant`` 
+           *optional* **object** or **null**. See `Create a Business Merchant <./bank_accounts.rst#create-a-business-merchant>`_ or `Create a Person Merchant <./bank_accounts.rst#create-a-person-merchant>`_. 
  
  
 
