@@ -1,75 +1,76 @@
-======
 Errors
 ======
 
-    ``status_code``
-        *string*. HTTP response code of the exception.
+**200** OK - Item or collection retrieved successfully.
 
-    ``status``
-        *string*. 
-    ``additional``
-        *string*. Any additional information that may describe how to resolve the issue.
+**201** Created - Item created.
 
-    ``category_type``
-        *string*. The type of the exception -- one of:
-          - request
-          - banking
-          - logical
+**204** No Content - Item deleted.
 
-    ``category_code``
-        *string*. The code of the exception.
+**400** Bad Request - Request does not meet the
+[API specifications](./resources.md).
 
-    ``extras``
-        *object*. Any extra information associated with this exception.
+**404** Not Found - Requested URI doesn't exist.
 
-    ``description``
-        *string*. Description of the exception
+**405** Method Not Allowed - The HTTP method used is not allowed for the requested URI.
 
-    ``request_id``
-        *string*. An ID that can be used to identify and debug the exception.
+**500, 502, 503, 504** Internal Server Error - Something went wrong on Balanced's side.
 
-.. _card-already-funding-src: card-already-funding-src
+Fields
+------
 
-card-already-funding-src
-    :category code: card-already-funding-src
-    :status code: 409
-    :category type: logical
+``status_code`` 
+    **string**. HTTP response code of the exception. 
+ 
+``status`` 
+    **string**.  
+``additional`` 
+    **string**. Any additional information that may describe how to resolve the issue. 
+ 
+``category_type`` 
+    **string**. The type of the exception. Values: ``request``, 
+    ``banking``, or ``logical`` 
+ 
+``category_code`` 
+    **string**. The code of the exception. 
+ 
+``extras`` 
+    **object**. Any extra information associated with this exception. 
+ 
+``description`` 
+    **string**. Description of the exception  
+ 
+``request_id`` 
+    **string**. An ID that can be used to identify and debug the exception.  
+ 
 
-    The card is already associated with an account -- it cannot be associated again.
+Logical
+-------
 
-.. _cannot-associate-card:
+.. wag-error-map: logical
+   :categories: logical
 
-cannot-associate-card
-    :category code: cannot-associate-card
-    :status code: 409
-    :category type: logical
+Banking
+-------
 
-    The card was tokenized on a different marketplace than the one used for this request.
+.. wag-error-map: logical
+   :categories: banking
+   
+Errors related to banking/payment processing.
 
-.. _card-not-validated:
+``status_code`` 402
 
-card-not-validated
-    :category code: card-not-validated
-    :status code: 409
-    :category type: logical
+``category_type`` banking
 
-    The card could not be validated -- either the card number or security code may be wrong.
+``category_code``
+    card-declined - Card was declined by the processor.
+     
+    authorization-failed - The processor did not accept this hold.
+    
+    funding-destination-declined - The processor did not accept the transaction.
 
-.. _card-declined:
+Request
+-------
 
-card-declined
-    :category code: card-declined
-    :status code: 402
-    :category type: banking
-
-    This card was declined by the processor.
-
-.. _card-not-valid:
-
-card-not-valid
-    :category code: card-not-valid
-    :status code: 409
-    :category type: logical
-
-    This card has already been marked as invalid/deactivated. It cannot be used again.
-
+.. wag-error-map: balanced_service.response.convert_exception.CLASS_TO_EXCEPTION
+   :categories: request
