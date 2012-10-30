@@ -1,9 +1,9 @@
-Mechants
+Merchants
 ========
 
-- `List all Mechants`_.
-- `Retrieve a Mechant`_.
-- `Update a Mechant`_.
+- `List all Merchants`_.
+- `Retrieve a Merchant`_.
+- `Update a Merchant`_.
 
 Fields
 ------
@@ -36,7 +36,8 @@ Fields
     **integer**. Merchant's account balance. 
  
 ``marketplace`` 
-    **object**.  
+    **object**. See `Marketplaces <./marketplaces.rst#marketplace-view>`_. 
+ 
 ``accounts_uri`` 
     **string**. Accounts belonging to this merchant. 
  
@@ -55,12 +56,11 @@ Fields
 ``country_code`` 
     **string**.  
 
-List all Mechants
------------------
+List all Merchants
+------------------
 
 .. code:: 
  
-    HEAD /v1/merchants 
     GET /v1/merchants 
  
 
@@ -89,34 +89,34 @@ Body
                     "in_escrow": 9999999,  
                     "domain_url": "hiya.bom",  
                     "name": "Some",  
-                    "owner_account_uri": "/v1/marketplaces/TEST-MP7yRPgRK5JmaHb91UKDi5iP/accounts/AC7yVYQFnuDv37lxuhTvonXd",  
+                    "owner_account_uri": "/v1/marketplaces/TEST-MP1JJmgk319CGVY2rF5JmOlC/accounts/AC1JLkGvXl4lvMGLx7MTlyvO",  
                     "support_email_address": "email.0@y.com",  
-                    "uri": "/v1/marketplaces/TEST-MP7yRPgRK5JmaHb91UKDi5iP",  
-                    "bank_accounts_uri": "/v1/marketplaces/TEST-MP7yRPgRK5JmaHb91UKDi5iP/bank_accounts",  
+                    "uri": "/v1/marketplaces/TEST-MP1JJmgk319CGVY2rF5JmOlC",  
+                    "bank_accounts_uri": "/v1/marketplaces/TEST-MP1JJmgk319CGVY2rF5JmOlC/bank_accounts",  
                     "support_phone_number": "1234321234",  
-                    "refunds_uri": "/v1/marketplaces/TEST-MP7yRPgRK5JmaHb91UKDi5iP/refunds",  
+                    "refunds_uri": "/v1/marketplaces/TEST-MP1JJmgk319CGVY2rF5JmOlC/refunds",  
                     "meta": {},  
-                    "debits_uri": "/v1/marketplaces/TEST-MP7yRPgRK5JmaHb91UKDi5iP/debits",  
-                    "holds_uri": "/v1/marketplaces/TEST-MP7yRPgRK5JmaHb91UKDi5iP/holds",  
-                    "transactions_uri": "/v1/marketplaces/TEST-MP7yRPgRK5JmaHb91UKDi5iP/transactions",  
-                    "accounts_uri": "/v1/marketplaces/TEST-MP7yRPgRK5JmaHb91UKDi5iP/accounts",  
-                    "id": "TEST-MP7yRPgRK5JmaHb91UKDi5iP",  
-                    "credits_uri": "/v1/marketplaces/TEST-MP7yRPgRK5JmaHb91UKDi5iP/credits",  
-                    "cards_uri": "/v1/marketplaces/TEST-MP7yRPgRK5JmaHb91UKDi5iP/cards" 
+                    "debits_uri": "/v1/marketplaces/TEST-MP1JJmgk319CGVY2rF5JmOlC/debits",  
+                    "holds_uri": "/v1/marketplaces/TEST-MP1JJmgk319CGVY2rF5JmOlC/holds",  
+                    "transactions_uri": "/v1/marketplaces/TEST-MP1JJmgk319CGVY2rF5JmOlC/transactions",  
+                    "accounts_uri": "/v1/marketplaces/TEST-MP1JJmgk319CGVY2rF5JmOlC/accounts",  
+                    "id": "TEST-MP1JJmgk319CGVY2rF5JmOlC",  
+                    "credits_uri": "/v1/marketplaces/TEST-MP1JJmgk319CGVY2rF5JmOlC/credits",  
+                    "cards_uri": "/v1/marketplaces/TEST-MP1JJmgk319CGVY2rF5JmOlC/cards" 
                 },  
                 "name": "Merchants, Inc.",  
                 "email_address": "email.1@y.com",  
-                "created_at": "2012-10-30T00:11:05.604455Z",  
-                "uri": "/v1/merchants/TEST-MR7yVyb2XrjdzAm27rDzzWRd",  
-                "accounts_uri": "/v1/merchants/TEST-MR7yVyb2XrjdzAm27rDzzWRd/accounts",  
+                "created_at": "2012-10-30T09:59:52.712952Z",  
+                "uri": "/v1/merchants/TEST-MR1JKV3Lpa4CproquuIt7mhS",  
+                "accounts_uri": "/v1/merchants/TEST-MR1JKV3Lpa4CproquuIt7mhS/accounts",  
                 "meta": {},  
                 "postal_code": "94110",  
                 "country_code": "USA",  
                 "balance": 0,  
                 "type": "business",  
-                "id": "TEST-MR7yVyb2XrjdzAm27rDzzWRd",  
+                "id": "TEST-MR1JKV3Lpa4CproquuIt7mhS",  
                 "street_address": "Somewhere over the rainbow",  
-                "api_keys_uri": "/v1/merchants/TEST-MR7yVyb2XrjdzAm27rDzzWRd/api_keys" 
+                "api_keys_uri": "/v1/merchants/TEST-MR1JKV3Lpa4CproquuIt7mhS/api_keys" 
             } 
         ],  
         "previous_uri": null,  
@@ -129,12 +129,12 @@ Body
     } 
  
 
-Retrieve a Mechant
-------------------
+Retrieve a Merchant
+-------------------
 
 .. code:: 
  
-    GET /v1/merchants/(merchant:merchant) 
+    GET /v1/merchants/(merchant-id) 
  
 
 Response 
@@ -159,43 +159,43 @@ Body
             "in_escrow": 9999999,  
             "domain_url": "hiya.bom",  
             "name": "Some",  
-            "owner_account_uri": "/v1/marketplaces/TEST-MP7BEd7JVGsEuXSXWUQ5Ch1x/accounts/AC7BHDLFfyr1bPOLwUQGqG5l",  
+            "owner_account_uri": "/v1/marketplaces/TEST-MP1Ln09e7uHIHfIBX1a1z9Qg/accounts/AC1LoYnCMnPCaYG2fImUwWWg",  
             "support_email_address": "email.0@y.com",  
-            "uri": "/v1/marketplaces/TEST-MP7BEd7JVGsEuXSXWUQ5Ch1x",  
-            "bank_accounts_uri": "/v1/marketplaces/TEST-MP7BEd7JVGsEuXSXWUQ5Ch1x/bank_accounts",  
+            "uri": "/v1/marketplaces/TEST-MP1Ln09e7uHIHfIBX1a1z9Qg",  
+            "bank_accounts_uri": "/v1/marketplaces/TEST-MP1Ln09e7uHIHfIBX1a1z9Qg/bank_accounts",  
             "support_phone_number": "1234321234",  
-            "refunds_uri": "/v1/marketplaces/TEST-MP7BEd7JVGsEuXSXWUQ5Ch1x/refunds",  
+            "refunds_uri": "/v1/marketplaces/TEST-MP1Ln09e7uHIHfIBX1a1z9Qg/refunds",  
             "meta": {},  
-            "debits_uri": "/v1/marketplaces/TEST-MP7BEd7JVGsEuXSXWUQ5Ch1x/debits",  
-            "holds_uri": "/v1/marketplaces/TEST-MP7BEd7JVGsEuXSXWUQ5Ch1x/holds",  
-            "transactions_uri": "/v1/marketplaces/TEST-MP7BEd7JVGsEuXSXWUQ5Ch1x/transactions",  
-            "accounts_uri": "/v1/marketplaces/TEST-MP7BEd7JVGsEuXSXWUQ5Ch1x/accounts",  
-            "id": "TEST-MP7BEd7JVGsEuXSXWUQ5Ch1x",  
-            "credits_uri": "/v1/marketplaces/TEST-MP7BEd7JVGsEuXSXWUQ5Ch1x/credits",  
-            "cards_uri": "/v1/marketplaces/TEST-MP7BEd7JVGsEuXSXWUQ5Ch1x/cards" 
+            "debits_uri": "/v1/marketplaces/TEST-MP1Ln09e7uHIHfIBX1a1z9Qg/debits",  
+            "holds_uri": "/v1/marketplaces/TEST-MP1Ln09e7uHIHfIBX1a1z9Qg/holds",  
+            "transactions_uri": "/v1/marketplaces/TEST-MP1Ln09e7uHIHfIBX1a1z9Qg/transactions",  
+            "accounts_uri": "/v1/marketplaces/TEST-MP1Ln09e7uHIHfIBX1a1z9Qg/accounts",  
+            "id": "TEST-MP1Ln09e7uHIHfIBX1a1z9Qg",  
+            "credits_uri": "/v1/marketplaces/TEST-MP1Ln09e7uHIHfIBX1a1z9Qg/credits",  
+            "cards_uri": "/v1/marketplaces/TEST-MP1Ln09e7uHIHfIBX1a1z9Qg/cards" 
         },  
         "name": "Merchants, Inc.",  
-        "api_keys_uri": "/v1/merchants/TEST-MR7BGZLmVFJ3JYTzdisqmbYv/api_keys",  
-        "created_at": "2012-10-30T00:11:08.064583Z",  
-        "uri": "/v1/merchants/TEST-MR7BGZLmVFJ3JYTzdisqmbYv",  
-        "accounts_uri": "/v1/merchants/TEST-MR7BGZLmVFJ3JYTzdisqmbYv/accounts",  
+        "api_keys_uri": "/v1/merchants/TEST-MR1LoyC1N8fgzi3ICvGhxxpG/api_keys",  
+        "created_at": "2012-10-30T09:59:54.170439Z",  
+        "uri": "/v1/merchants/TEST-MR1LoyC1N8fgzi3ICvGhxxpG",  
+        "accounts_uri": "/v1/merchants/TEST-MR1LoyC1N8fgzi3ICvGhxxpG/accounts",  
         "meta": {},  
         "postal_code": "94110",  
         "country_code": "USA",  
         "type": "business",  
         "balance": 0,  
         "email_address": "email.1@y.com",  
-        "id": "TEST-MR7BGZLmVFJ3JYTzdisqmbYv",  
+        "id": "TEST-MR1LoyC1N8fgzi3ICvGhxxpG",  
         "street_address": "Somewhere over the rainbow" 
     } 
  
 
-Update a Mechant
-----------------
+Update a Merchant
+-----------------
 
 .. code:: 
  
-    PUT /v1/merchants/(merchant:merchant) 
+    PUT /v1/merchants/(merchant-id) 
  
 
 Request
@@ -277,10 +277,10 @@ Body
         "city": "San Francisco",  
         "marketplace": null,  
         "name": "Willie",  
-        "api_keys_uri": "/v1/merchants/TEST-MR7HwWCPlHrbvdasPK0mJKYb/api_keys",  
-        "created_at": "2012-10-30T00:11:13.251869Z",  
-        "uri": "/v1/merchants/TEST-MR7HwWCPlHrbvdasPK0mJKYb",  
-        "accounts_uri": "/v1/merchants/TEST-MR7HwWCPlHrbvdasPK0mJKYb/accounts",  
+        "api_keys_uri": "/v1/merchants/TEST-MR1Q5PjFH55Gm2eZgOwaX9Va/api_keys",  
+        "created_at": "2012-10-30T09:59:58.345545Z",  
+        "uri": "/v1/merchants/TEST-MR1Q5PjFH55Gm2eZgOwaX9Va",  
+        "accounts_uri": "/v1/merchants/TEST-MR1Q5PjFH55Gm2eZgOwaX9Va/accounts",  
         "meta": { 
             "location": "121.121" 
         },  
@@ -289,7 +289,7 @@ Body
         "type": "business",  
         "balance": 0,  
         "email_address": "will@ie.com",  
-        "id": "TEST-MR7HwWCPlHrbvdasPK0mJKYb",  
+        "id": "TEST-MR1Q5PjFH55Gm2eZgOwaX9Va",  
         "street_address": "Somewhere over the rainbow" 
     } 
  

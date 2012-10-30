@@ -16,7 +16,7 @@ Fields
     **string**. The URI of the card  
  
 ``account`` 
-    **object**. The account this card is associated with. 
+    **object**. The account this card is associated with.See `Accounts <./accounts.rst#fields>`_. 
  
 ``created_at`` 
     **string**. `ISO 8601 <http://www.w3.org/QA/Tips/iso-date>`_ date of when this card 
@@ -71,7 +71,7 @@ Tokenize a Card
 
 .. code:: 
  
-    POST /v1/marketplaces/(marketplace:marketplace)/cards 
+    POST /v1/marketplaces/(marketplace-id)/cards 
  
 
 Request
@@ -133,7 +133,7 @@ Body
         "expiration_year": 2014,  
         "country_code": "USA",  
         "security_code": 323,  
-        "card_number": 5105105105105100,  
+        "card_number": 6011111111111117,  
         "street_address": "167 West 74th Street" 
     } 
  
@@ -154,20 +154,20 @@ Body
 .. code:: javascript 
  
     { 
-        "created_at": "2012-10-30T00:09:44.343654Z",  
+        "created_at": "2012-10-30T09:58:48.846464Z",  
         "account": null,  
         "hash": "handcock",  
         "country_code": "USA",  
         "expiration_year": 2014,  
         "brand": "American Express",  
-        "uri": "/v1/marketplaces/TEST-MP65jDuWfpZ3AVF99JE0m00P/cards/CC65x8MncDzca5DJMzrz0CS7",  
+        "uri": "/v1/marketplaces/TEST-MPzF5ZRd7zckRC5j1L6ugIc/cards/CCzVtfHndAMKke0agPeUayw",  
         "expiration_month": 4,  
         "is_valid": true,  
         "meta": {},  
         "postal_code": "10023",  
-        "last_four": "5100",  
+        "last_four": "1117",  
         "card_type": "amex",  
-        "id": "CC65x8MncDzca5DJMzrz0CS7",  
+        "id": "CCzVtfHndAMKke0agPeUayw",  
         "street_address": "167 West 74th Street",  
         "name": "Benny Riemann" 
     } 
@@ -178,7 +178,7 @@ Retrieve a Card
 
 .. code:: 
  
-    GET /v1/marketplaces/(marketplace:marketplace)/cards/(card:card) 
+    GET /v1/marketplaces/(marketplace-id)/cards/(card-id) 
  
 
 Response
@@ -197,20 +197,20 @@ Body
 .. code:: javascript 
  
     { 
-        "created_at": "2012-10-30T00:09:46.087852Z",  
+        "created_at": "2012-10-30T09:58:50.170525Z",  
         "account": null,  
         "hash": "handcock",  
         "country_code": "USA",  
         "expiration_year": 2014,  
         "brand": "American Express",  
-        "uri": "/v1/marketplaces/TEST-MP67hlqfCOwZX3nus5MSQz75/cards/CC67uLs08FDIZPdE5pIv6igr",  
+        "uri": "/v1/marketplaces/TEST-MPBd7lEXinLpAlNarZE3MkA/cards/CCBpNSq1IL9MjNz2ojrh5L6",  
         "expiration_month": 4,  
         "is_valid": true,  
         "meta": {},  
         "postal_code": "10023",  
-        "last_four": "5100",  
+        "last_four": "1111",  
         "card_type": "amex",  
-        "id": "CC67uLs08FDIZPdE5pIv6igr",  
+        "id": "CCBpNSq1IL9MjNz2ojrh5L6",  
         "street_address": "167 West 74th Street",  
         "name": "Benny Riemann" 
     } 
@@ -221,7 +221,7 @@ Update a Card
 
 .. code:: 
  
-    PUT /v1/marketplaces/(marketplace:marketplace)/cards/(card:card) 
+    PUT /v1/marketplaces/(marketplace-id)/cards/(card-id) 
  
 
 Request
@@ -269,14 +269,14 @@ Body
         "hash": "handcock",  
         "name": "Benny Riemann",  
         "expiration_year": 2014,  
-        "created_at": "2012-10-30T00:09:49.442169Z",  
+        "created_at": "2012-10-30T09:58:52.872314Z",  
         "brand": "American Express",  
-        "uri": "/v1/marketplaces/TEST-MP6b1kvR9IQKpEgJsClOP4nV/cards/CC6bgG91NAzcpvr2aeyIbYf9",  
+        "uri": "/v1/marketplaces/TEST-MPEfFMrxno0OaN6pJTWDRK4/cards/CCEscK0733Wf5o9OBXof7SI",  
         "expiration_month": 4,  
         "is_valid": false,  
         "meta": {},  
-        "last_four": "5100",  
-        "id": "CC6bgG91NAzcpvr2aeyIbYf9" 
+        "last_four": "1117",  
+        "id": "CCEscK0733Wf5o9OBXof7SI" 
     } 
  
 
@@ -285,7 +285,7 @@ Associate a Card with an Account
 
 .. code:: 
  
-    PUT /v1/marketplaces/(marketplace:marketplace)/cards/(card:card) 
+    PUT /v1/marketplaces/(marketplace-id)/cards/(card-id) 
  
 
 Request
@@ -301,7 +301,7 @@ Body
 .. code:: javascript 
  
     { 
-        "account_uri": "/v1/marketplaces/TEST-MP6cWCcRkxZDXtszvpdGVTyP/accounts/AC6d2a9hY6rJwK0x3w3a0IV5" 
+        "account_uri": "/v1/marketplaces/TEST-MPFRLlonhZbrOFMuT4lZPo0/accounts/ACFZ6e44U5sUc4mnRu3oNJG" 
     } 
  
 
@@ -323,35 +323,35 @@ Body
     { 
         "card_type": "amex",  
         "account": { 
-            "holds_uri": "/v1/marketplaces/TEST-MP6eTPBbg68G81fo61T8FGRJ/accounts/AC6f0SE8nspkopmOfch6SQCL/holds",  
+            "holds_uri": "/v1/marketplaces/TEST-MPHp7uUSeBGFn7HUg6eYrn6/accounts/ACHwsBwMs0dHZkymjUrL5ly/holds",  
             "name": null,  
             "roles": [ 
                 "merchant",  
                 "buyer" 
             ],  
-            "created_at": "2012-10-30T00:09:52.771769Z",  
-            "uri": "/v1/marketplaces/TEST-MP6eTPBbg68G81fo61T8FGRJ/accounts/AC6f0SE8nspkopmOfch6SQCL",  
-            "bank_accounts_uri": "/v1/marketplaces/TEST-MP6eTPBbg68G81fo61T8FGRJ/accounts/AC6f0SE8nspkopmOfch6SQCL/bank_accounts",  
-            "refunds_uri": "/v1/marketplaces/TEST-MP6eTPBbg68G81fo61T8FGRJ/accounts/AC6f0SE8nspkopmOfch6SQCL/refunds",  
+            "created_at": "2012-10-30T09:58:55.600444Z",  
+            "uri": "/v1/marketplaces/TEST-MPHp7uUSeBGFn7HUg6eYrn6/accounts/ACHwsBwMs0dHZkymjUrL5ly",  
+            "bank_accounts_uri": "/v1/marketplaces/TEST-MPHp7uUSeBGFn7HUg6eYrn6/accounts/ACHwsBwMs0dHZkymjUrL5ly/bank_accounts",  
+            "refunds_uri": "/v1/marketplaces/TEST-MPHp7uUSeBGFn7HUg6eYrn6/accounts/ACHwsBwMs0dHZkymjUrL5ly/refunds",  
             "meta": {},  
-            "debits_uri": "/v1/marketplaces/TEST-MP6eTPBbg68G81fo61T8FGRJ/accounts/AC6f0SE8nspkopmOfch6SQCL/debits",  
-            "transactions_uri": "/v1/marketplaces/TEST-MP6eTPBbg68G81fo61T8FGRJ/accounts/AC6f0SE8nspkopmOfch6SQCL/transactions",  
+            "debits_uri": "/v1/marketplaces/TEST-MPHp7uUSeBGFn7HUg6eYrn6/accounts/ACHwsBwMs0dHZkymjUrL5ly/debits",  
+            "transactions_uri": "/v1/marketplaces/TEST-MPHp7uUSeBGFn7HUg6eYrn6/accounts/ACHwsBwMs0dHZkymjUrL5ly/transactions",  
             "email_address": "email.7@y.com",  
-            "id": "AC6f0SE8nspkopmOfch6SQCL",  
-            "credits_uri": "/v1/marketplaces/TEST-MP6eTPBbg68G81fo61T8FGRJ/accounts/AC6f0SE8nspkopmOfch6SQCL/credits",  
-            "cards_uri": "/v1/marketplaces/TEST-MP6eTPBbg68G81fo61T8FGRJ/accounts/AC6f0SE8nspkopmOfch6SQCL/cards" 
+            "id": "ACHwsBwMs0dHZkymjUrL5ly",  
+            "credits_uri": "/v1/marketplaces/TEST-MPHp7uUSeBGFn7HUg6eYrn6/accounts/ACHwsBwMs0dHZkymjUrL5ly/credits",  
+            "cards_uri": "/v1/marketplaces/TEST-MPHp7uUSeBGFn7HUg6eYrn6/accounts/ACHwsBwMs0dHZkymjUrL5ly/cards" 
         },  
         "hash": "handcock",  
         "name": "Benny Riemann",  
         "expiration_year": 2014,  
-        "created_at": "2012-10-30T00:09:52.852828Z",  
+        "created_at": "2012-10-30T09:58:55.675657Z",  
         "brand": "American Express",  
-        "uri": "/v1/marketplaces/TEST-MP6eTPBbg68G81fo61T8FGRJ/accounts/AC6f0SE8nspkopmOfch6SQCL/cards/CC6f6ves8vTZGGAdaUCbEERt",  
+        "uri": "/v1/marketplaces/TEST-MPHp7uUSeBGFn7HUg6eYrn6/accounts/ACHwsBwMs0dHZkymjUrL5ly/cards/CCHBGWkVjEeAGTWtFtOmLwU",  
         "expiration_month": 4,  
         "is_valid": true,  
         "meta": {},  
-        "last_four": "1111",  
-        "id": "CC6f6ves8vTZGGAdaUCbEERt" 
+        "last_four": "5100",  
+        "id": "CCHBGWkVjEeAGTWtFtOmLwU" 
     } 
  
 

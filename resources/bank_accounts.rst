@@ -33,7 +33,7 @@ Fields
     bank account was tokenized. 
  
 ``account`` 
-    **object**. The account to which this bank account is associated. 
+    **object**. The account to which this bank account is associated.See `Accounts <./accounts.rst#fields>`_. 
  
 ``is_valid`` 
     **boolean**. Boolean flag indicating whether the bank account is currently valid. 
@@ -47,7 +47,7 @@ Tokenize a Bank Account
 
 .. code:: 
  
-    POST /v1/marketplaces/(marketplace:marketplace)/bank_accounts 
+    POST /v1/marketplaces/(marketplace-id)/bank_accounts 
  
 
 Request
@@ -106,12 +106,12 @@ Body
         "account": null,  
         "name": "Fit Finlay",  
         "bank_code": "325182797",  
-        "created_at": "2012-10-30T00:09:31.977726Z",  
-        "uri": "/v1/marketplaces/TEST-MP5RrTmPWyvmmEwyy5tm4vRh/bank_accounts/BA5RCQ3OBnINIJafhtRdlGlZ",  
+        "created_at": "2012-10-30T09:58:36.910527Z",  
+        "uri": "/v1/marketplaces/TEST-MPmg5NbJ70AqBJKbBmJ4iyg/bank_accounts/BAmv9rwJfJRcfaN5xWpbPrS",  
         "is_valid": true,  
         "meta": {},  
         "last_four": "1234",  
-        "id": "BA5RCQ3OBnINIJafhtRdlGlZ" 
+        "id": "BAmv9rwJfJRcfaN5xWpbPrS" 
     } 
  
 
@@ -120,7 +120,7 @@ Retrieve a Bank Account
 
 .. code:: 
  
-    GET /v1/marketplaces/(marketplace:marketplace)/bank_accounts/(bank_account:bank_account) 
+    GET /v1/marketplaces/(marketplace-id)/bank_accounts/(bank_account-id) 
  
 
 Response 
@@ -143,12 +143,12 @@ Body
         "account": null,  
         "name": "Fit Finlay",  
         "bank_code": "325182797",  
-        "created_at": "2012-10-30T00:09:33.283192Z",  
-        "uri": "/v1/marketplaces/TEST-MP5SWFZcwlnXckAcgXL8CEef/bank_accounts/BA5T5SJHhFmfhw8N3yv5zb35",  
+        "created_at": "2012-10-30T09:58:38.138584Z",  
+        "uri": "/v1/marketplaces/TEST-MPnGO8Va0MvNPWvaIVcvEsQ/bank_accounts/BAnSNdKkNsoW151cO7oTDdq",  
         "is_valid": true,  
         "meta": {},  
         "last_four": "1234",  
-        "id": "BA5T5SJHhFmfhw8N3yv5zb35" 
+        "id": "BAnSNdKkNsoW151cO7oTDdq" 
     } 
  
 
@@ -157,7 +157,7 @@ Update a Bank Account
 
 .. code:: 
  
-    PUT /v1/marketplaces/(marketplace:marketplace)/bank_accounts/(bank_account:bank_account) 
+    PUT /v1/marketplaces/(marketplace-id)/bank_accounts/(bank_account-id) 
  
 
 Request
@@ -204,12 +204,12 @@ Body
         "account": null,  
         "name": "Fit Finlay",  
         "bank_code": "325182797",  
-        "created_at": "2012-10-30T00:09:36.073705Z",  
-        "uri": "/v1/marketplaces/TEST-MP5W3ugc5TAT7Mi2cOg6Bzx1/bank_accounts/BA5Wetv3w4CRVB4Ic5Nh6U5J",  
+        "created_at": "2012-10-30T09:58:40.888531Z",  
+        "uri": "/v1/marketplaces/TEST-MPqOUgR547XwXt8HrF1ugbq/bank_accounts/BAqYyPcwf1E4EkOCTBZKgmM",  
         "is_valid": false,  
         "meta": {},  
         "last_four": "1234",  
-        "id": "BA5Wetv3w4CRVB4Ic5Nh6U5J" 
+        "id": "BAqYyPcwf1E4EkOCTBZKgmM" 
     } 
  
 
@@ -218,7 +218,7 @@ Associate a Bank Account with an Account
 
 .. code:: 
  
-    PUT /v1/marketplaces/(marketplace:marketplace)/bank_accounts/(bank_account:bank_account) 
+    PUT /v1/marketplaces/(marketplace-id)/bank_accounts/(bank_account-id) 
  
 
 Request
@@ -230,7 +230,7 @@ Body
 .. code:: javascript 
  
     { 
-        "account_uri": "/v1/marketplaces/TEST-MP5XyjGNdcECLnSRKUIkELoT/accounts/AC5XFFJiSZJAo4nKfE0NkOr1" 
+        "account_uri": "/v1/marketplaces/TEST-MPsl72P31MEFCmaPOrxRYyg/accounts/ACsssJTb7NnRanpxkFGSQ0A" 
     } 
  
 
@@ -256,32 +256,32 @@ Body
     { 
         "bank_name": null,  
         "account": { 
-            "holds_uri": "/v1/marketplaces/TEST-MP5Zfafh35q4YIXfgvKUzp1V/accounts/AC5ZmYgCMYwtOn89gZMPGRhN/holds",  
+            "holds_uri": "/v1/marketplaces/TEST-MPtV97GMGMwj961h4u9pQ3O/accounts/ACu2v5Uy8QDrBuYd9Y9mrYM/holds",  
             "name": null,  
             "roles": [ 
                 "merchant",  
                 "buyer" 
             ],  
-            "created_at": "2012-10-30T00:09:38.862982Z",  
-            "uri": "/v1/marketplaces/TEST-MP5Zfafh35q4YIXfgvKUzp1V/accounts/AC5ZmYgCMYwtOn89gZMPGRhN",  
-            "bank_accounts_uri": "/v1/marketplaces/TEST-MP5Zfafh35q4YIXfgvKUzp1V/accounts/AC5ZmYgCMYwtOn89gZMPGRhN/bank_accounts",  
-            "refunds_uri": "/v1/marketplaces/TEST-MP5Zfafh35q4YIXfgvKUzp1V/accounts/AC5ZmYgCMYwtOn89gZMPGRhN/refunds",  
+            "created_at": "2012-10-30T09:58:43.612363Z",  
+            "uri": "/v1/marketplaces/TEST-MPtV97GMGMwj961h4u9pQ3O/accounts/ACu2v5Uy8QDrBuYd9Y9mrYM",  
+            "bank_accounts_uri": "/v1/marketplaces/TEST-MPtV97GMGMwj961h4u9pQ3O/accounts/ACu2v5Uy8QDrBuYd9Y9mrYM/bank_accounts",  
+            "refunds_uri": "/v1/marketplaces/TEST-MPtV97GMGMwj961h4u9pQ3O/accounts/ACu2v5Uy8QDrBuYd9Y9mrYM/refunds",  
             "meta": {},  
-            "debits_uri": "/v1/marketplaces/TEST-MP5Zfafh35q4YIXfgvKUzp1V/accounts/AC5ZmYgCMYwtOn89gZMPGRhN/debits",  
-            "transactions_uri": "/v1/marketplaces/TEST-MP5Zfafh35q4YIXfgvKUzp1V/accounts/AC5ZmYgCMYwtOn89gZMPGRhN/transactions",  
+            "debits_uri": "/v1/marketplaces/TEST-MPtV97GMGMwj961h4u9pQ3O/accounts/ACu2v5Uy8QDrBuYd9Y9mrYM/debits",  
+            "transactions_uri": "/v1/marketplaces/TEST-MPtV97GMGMwj961h4u9pQ3O/accounts/ACu2v5Uy8QDrBuYd9Y9mrYM/transactions",  
             "email_address": "email.7@y.com",  
-            "id": "AC5ZmYgCMYwtOn89gZMPGRhN",  
-            "credits_uri": "/v1/marketplaces/TEST-MP5Zfafh35q4YIXfgvKUzp1V/accounts/AC5ZmYgCMYwtOn89gZMPGRhN/credits",  
-            "cards_uri": "/v1/marketplaces/TEST-MP5Zfafh35q4YIXfgvKUzp1V/accounts/AC5ZmYgCMYwtOn89gZMPGRhN/cards" 
+            "id": "ACu2v5Uy8QDrBuYd9Y9mrYM",  
+            "credits_uri": "/v1/marketplaces/TEST-MPtV97GMGMwj961h4u9pQ3O/accounts/ACu2v5Uy8QDrBuYd9Y9mrYM/credits",  
+            "cards_uri": "/v1/marketplaces/TEST-MPtV97GMGMwj961h4u9pQ3O/accounts/ACu2v5Uy8QDrBuYd9Y9mrYM/cards" 
         },  
         "name": "Fit Finlay",  
         "bank_code": "325182797",  
-        "created_at": "2012-10-30T00:09:38.939656Z",  
-        "uri": "/v1/marketplaces/TEST-MP5Zfafh35q4YIXfgvKUzp1V/accounts/AC5ZmYgCMYwtOn89gZMPGRhN/bank_accounts/BA5ZsjursXAEJAlwXwPAvTx1",  
+        "created_at": "2012-10-30T09:58:43.682912Z",  
+        "uri": "/v1/marketplaces/TEST-MPtV97GMGMwj961h4u9pQ3O/accounts/ACu2v5Uy8QDrBuYd9Y9mrYM/bank_accounts/BAu7pJtbZR5v4lfYEwyhQws",  
         "is_valid": true,  
         "meta": {},  
         "last_four": "1234",  
-        "id": "BA5ZsjursXAEJAlwXwPAvTx1" 
+        "id": "BAu7pJtbZR5v4lfYEwyhQws" 
     } 
  
 

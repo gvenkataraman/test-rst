@@ -21,7 +21,7 @@ Fields
     api key was created. 
  
 ``merchant`` 
-    **object**. The merchant owning this API key. 
+    **object**. The merchant owning this API key.See `Merchant <./merchants.rst>`_. 
  
 ``secret`` 
     **string**. The secret associated with this API key. Will only be shown if passed 
@@ -36,7 +36,7 @@ Create an API Key
 
 .. code:: 
  
-    POST /v1/merchants/(merchant:merchant)/api_keys 
+    POST /v1/merchants/(merchant-id)/api_keys 
     POST /v1/api_keys 
  
 
@@ -75,13 +75,13 @@ Body
 .. code:: javascript 
  
     { 
-        "id": "AK5FnRML3Tz6cmWXOteC6zBh",  
-        "created_at": "2012-10-30T00:09:21.093932Z",  
+        "id": "AKapmlowSuGFpckONaptZzK",  
+        "created_at": "2012-10-30T09:58:26.158220Z",  
         "meta": { 
             "some": "data" 
         },  
-        "secret": "ba36e1da226011e2bcfc80ee7316ae43",  
-        "uri": "/v1/api_keys/AK5FnRML3Tz6cmWXOteC6zBh" 
+        "secret": "0583cb4c22b311e2b37680ee7316ae44",  
+        "uri": "/v1/api_keys/AKapmlowSuGFpckONaptZzK" 
     } 
  
 
@@ -90,8 +90,8 @@ Retrieve an API Key
 
 .. code:: 
  
-    GET /v1/merchants/(merchant:merchant)/api_keys/(api_key:api_key) 
-    GET /v1/api_keys/(api_key:api_key) 
+    GET /v1/merchants/(merchant-id)/api_keys/(api_key-id) 
+    GET /v1/api_keys/(api_key-id) 
  
 
 Response 
@@ -110,10 +110,10 @@ Body
 .. code:: javascript 
  
     { 
-        "created_at": "2012-10-30T00:09:22.272080Z",  
+        "created_at": "2012-10-30T09:58:27.387191Z",  
         "meta": {},  
-        "id": "AK5GI2FoH9NPRTtzS8xeHgDF",  
-        "uri": "/v1/api_keys/AK5GI2FoH9NPRTtzS8xeHgDF" 
+        "id": "AKbN4wLc8gLXa87VSBSmGLG",  
+        "uri": "/v1/api_keys/AKbN4wLc8gLXa87VSBSmGLG" 
     } 
  
 
@@ -122,7 +122,7 @@ List all API Keys
 
 .. code:: 
  
-    GET /v1/merchants/(merchant:merchant)/api_keys 
+    GET /v1/merchants/(merchant-id)/api_keys 
     GET /v1/api_keys 
  
 
@@ -145,29 +145,29 @@ Body
         "first_uri": "/v1/api_keys?limit=10&offset=0",  
         "items": [ 
             { 
-                "id": "AK5HRKO88lJHhQ11WOSgOEyT",  
-                "created_at": "2012-10-30T00:09:23.302289Z",  
+                "id": "AKcV3GfBnsykNLqcke80Mw4",  
+                "created_at": "2012-10-30T09:58:28.392626Z",  
                 "meta": {},  
-                "secret": "bb86fb2e226011e29a1d80ee7316ae43",  
-                "uri": "/v1/api_keys/AK5HRKO88lJHhQ11WOSgOEyT" 
+                "secret": "06d7dbdc22b311e2b38c80ee7316ae44",  
+                "uri": "/v1/api_keys/AKcV3GfBnsykNLqcke80Mw4" 
             },  
             { 
-                "created_at": "2012-10-30T00:09:23.445642Z",  
+                "created_at": "2012-10-30T09:58:28.592606Z",  
                 "meta": {},  
-                "uri": "/v1/api_keys/AK5I1STxXQTWtIzZZbnQI3ZN",  
-                "id": "AK5I1STxXQTWtIzZZbnQI3ZN" 
+                "uri": "/v1/api_keys/AKd97FSRycT3qlGTEEuFW9m",  
+                "id": "AKd97FSRycT3qlGTEEuFW9m" 
             },  
             { 
-                "created_at": "2012-10-30T00:09:23.446420Z",  
+                "created_at": "2012-10-30T09:58:28.593878Z",  
                 "meta": {},  
-                "uri": "/v1/api_keys/AK5I1WLIQPFlMrVZh8XNKysP",  
-                "id": "AK5I1WLIQPFlMrVZh8XNKysP" 
+                "uri": "/v1/api_keys/AKd9dFFP3zTOL0R94wpXhQM",  
+                "id": "AKd9dFFP3zTOL0R94wpXhQM" 
             },  
             { 
-                "created_at": "2012-10-30T00:09:23.447138Z",  
+                "created_at": "2012-10-30T09:58:28.594999Z",  
                 "meta": {},  
-                "uri": "/v1/api_keys/AK5I1ZV8jElNuGpQFEuaoihZ",  
-                "id": "AK5I1ZV8jElNuGpQFEuaoihZ" 
+                "uri": "/v1/api_keys/AKd9iCAUGCmcTYR4hcPEoG8",  
+                "id": "AKd9iCAUGCmcTYR4hcPEoG8" 
             } 
         ],  
         "previous_uri": null,  
@@ -185,8 +185,8 @@ Update an API Key
 
 .. code:: 
  
-    PUT /v1/merchants/(merchant:merchant)/api_keys/(api_key:api_key) 
-    PUT /v1/api_keys/(api_key:api_key) 
+    PUT /v1/merchants/(merchant-id)/api_keys/(api_key-id) 
+    PUT /v1/api_keys/(api_key-id) 
  
 
 Request
@@ -224,12 +224,12 @@ Body
 .. code:: javascript 
  
     { 
-        "created_at": "2012-10-30T00:09:26.043253Z",  
+        "created_at": "2012-10-30T09:58:31.153720Z",  
         "meta": { 
             "some": "different data" 
         },  
-        "id": "AK5KX0PsnG0ykQzCqHu6ysan",  
-        "uri": "/v1/api_keys/AK5KX0PsnG0ykQzCqHu6ysan" 
+        "id": "AKg1IK1sFa6PkAS5YgyW9yk",  
+        "uri": "/v1/api_keys/AKg1IK1sFa6PkAS5YgyW9yk" 
     } 
  
 
@@ -238,8 +238,8 @@ Deactivate an API Key
 
 .. code:: 
  
-    DELETE /v1/merchants/(merchant:merchant)/api_keys/(api_key:api_key) 
-    DELETE /v1/api_keys/(api_key:api_key) 
+    DELETE /v1/merchants/(merchant-id)/api_keys/(api_key-id) 
+    DELETE /v1/api_keys/(api_key-id) 
  
 
 Headers 
