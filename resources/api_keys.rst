@@ -21,7 +21,7 @@ Fields
     api key was created. 
  
 ``merchant`` 
-    **object**. The merchant owning this API key.See `Merchant <./merchants.rst>`_. 
+    **object**. The merchant owning this API key. See `Merchant <./merchants.rst>`_. 
  
 ``secret`` 
     **string**. The secret associated with this API key. Will only be shown if passed 
@@ -75,13 +75,13 @@ Body
 .. code:: javascript 
  
     { 
-        "id": "AKapmlowSuGFpckONaptZzK",  
-        "created_at": "2012-10-30T09:58:26.158220Z",  
+        "id": "AK4B4ZrYPnDTmVmvrYCMn9gU",  
+        "created_at": "2012-10-30T10:09:39.867301Z",  
         "meta": { 
             "some": "data" 
         },  
-        "secret": "0583cb4c22b311e2b37680ee7316ae44",  
-        "uri": "/v1/api_keys/AKapmlowSuGFpckONaptZzK" 
+        "secret": "9713a7b622b411e291ef80ee7316ae44",  
+        "uri": "/v1/api_keys/AK4B4ZrYPnDTmVmvrYCMn9gU" 
     } 
  
 
@@ -110,10 +110,10 @@ Body
 .. code:: javascript 
  
     { 
-        "created_at": "2012-10-30T09:58:27.387191Z",  
+        "created_at": "2012-10-30T10:09:41.083732Z",  
         "meta": {},  
-        "id": "AKbN4wLc8gLXa87VSBSmGLG",  
-        "uri": "/v1/api_keys/AKbN4wLc8gLXa87VSBSmGLG" 
+        "id": "AK4CrP0e6sSTCK3lt19xThoU",  
+        "uri": "/v1/api_keys/AK4CrP0e6sSTCK3lt19xThoU" 
     } 
  
 
@@ -145,29 +145,29 @@ Body
         "first_uri": "/v1/api_keys?limit=10&offset=0",  
         "items": [ 
             { 
-                "id": "AKcV3GfBnsykNLqcke80Mw4",  
-                "created_at": "2012-10-30T09:58:28.392626Z",  
+                "id": "AK4DD8nQNE21tBCSiXp9zPdW",  
+                "created_at": "2012-10-30T10:09:42.136048Z",  
                 "meta": {},  
-                "secret": "06d7dbdc22b311e2b38c80ee7316ae44",  
-                "uri": "/v1/api_keys/AKcV3GfBnsykNLqcke80Mw4" 
+                "secret": "986d58d222b411e2b6b480ee7316ae44",  
+                "uri": "/v1/api_keys/AK4DD8nQNE21tBCSiXp9zPdW" 
             },  
             { 
-                "created_at": "2012-10-30T09:58:28.592606Z",  
+                "created_at": "2012-10-30T10:09:42.336155Z",  
                 "meta": {},  
-                "uri": "/v1/api_keys/AKd97FSRycT3qlGTEEuFW9m",  
-                "id": "AKd97FSRycT3qlGTEEuFW9m" 
+                "uri": "/v1/api_keys/AK4DR9xUqjMzJNqczfrNuobW",  
+                "id": "AK4DR9xUqjMzJNqczfrNuobW" 
             },  
             { 
-                "created_at": "2012-10-30T09:58:28.593878Z",  
+                "created_at": "2012-10-30T10:09:42.337270Z",  
                 "meta": {},  
-                "uri": "/v1/api_keys/AKd9dFFP3zTOL0R94wpXhQM",  
-                "id": "AKd9dFFP3zTOL0R94wpXhQM" 
+                "uri": "/v1/api_keys/AK4DReZVlUaFF5Abi6MzuV6I",  
+                "id": "AK4DReZVlUaFF5Abi6MzuV6I" 
             },  
             { 
-                "created_at": "2012-10-30T09:58:28.594999Z",  
+                "created_at": "2012-10-30T10:09:42.338292Z",  
                 "meta": {},  
-                "uri": "/v1/api_keys/AKd9iCAUGCmcTYR4hcPEoG8",  
-                "id": "AKd9iCAUGCmcTYR4hcPEoG8" 
+                "uri": "/v1/api_keys/AK4DRjys5tWGMjDddUwBh6AI",  
+                "id": "AK4DRjys5tWGMjDddUwBh6AI" 
             } 
         ],  
         "previous_uri": null,  
@@ -224,12 +224,12 @@ Body
 .. code:: javascript 
  
     { 
-        "created_at": "2012-10-30T09:58:31.153720Z",  
+        "created_at": "2012-10-30T10:09:44.923203Z",  
         "meta": { 
             "some": "different data" 
         },  
-        "id": "AKg1IK1sFa6PkAS5YgyW9yk",  
-        "uri": "/v1/api_keys/AKg1IK1sFa6PkAS5YgyW9yk" 
+        "id": "AK4GLyB9XmIxM2J0FEi3HiZu",  
+        "uri": "/v1/api_keys/AK4GLyB9XmIxM2J0FEi3HiZu" 
     } 
  
 
