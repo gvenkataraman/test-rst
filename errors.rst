@@ -44,30 +44,10 @@ Fields
     **string**. An ID that can be used to identify and debug the exception.  
  
 
-Logical
--------
-
-.. wag-error-map: balanced_service.response.convert_exception.CLASS_TO_EXCEPTION
-   :categories: logical
-
-Banking
--------
-
-Errors related to banking/payment processing.
-
 card-declined
-~~~~~~~~~~~~~
-
+-------------
 Card was declined by the processor.
 
-``status_code`` 402
-
-``category_type`` banking
-
-``category_code`` card-declined
-
-Request
--------
-
-.. wag-error-map: balanced_service.response.convert_exception.CLASS_TO_EXCEPTION
-   :categories: request
+    :status_code: 402
+    :category_type: banking
+    :category_code: card-declined
