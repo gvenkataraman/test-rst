@@ -47,27 +47,24 @@ Fields
 Logical
 -------
 
-.. wag-error-map: logical
+.. wag-error-map: balanced_service.response.convert_exception.CLASS_TO_EXCEPTION
    :categories: logical
 
 Banking
 -------
 
-.. wag-error-map: logical
-   :categories: banking
-   
 Errors related to banking/payment processing.
+
+card-declined
+~~~~~~~~~~~~~
+
+Card was declined by the processor.
 
 ``status_code`` 402
 
 ``category_type`` banking
 
-``category_code``
-    card-declined - Card was declined by the processor.
-     
-    authorization-failed - The processor did not accept this hold.
-    
-    funding-destination-declined - The processor did not accept the transaction.
+``category_code`` card-declined
 
 Request
 -------
