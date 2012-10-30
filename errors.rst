@@ -51,6 +51,12 @@ Status Codes
 Category Types
 --------------
 
+**request** - Malformed requests.
+
+**banking** - Errors related to banking/payment processing.
+
+**logical** - Errors related to requests that are well-formed, but logically inconsistent.
+
 Category Codes
 --------------
 
