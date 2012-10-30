@@ -48,6 +48,6 @@ card-declined
 -------------
 Card was declined by the processor.
 
-    :status_code: 402
-    :category_type: banking
-    :category_code: card-declined
+:status_code: 402
+:category_type: banking
+:category_code: card-declined
